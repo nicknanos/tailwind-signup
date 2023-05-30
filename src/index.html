@@ -10,17 +10,48 @@
 <body class="h-screen">
     <div class="flex w-full h-full">
         <div class="w-2/5 bg-hero-image bg-no-repeat bg-cover h-full">
-            <div class="bg-black opacity-60">
-                <p class="text-white text-4xl mt-60 px-5 py-3 text-center">Lorem</p>
+            <div class="bg-black/60 flex justify-center items-center mt-60 px-5 py-3">
+                <img class="w-24" src="../img/logo.png" alt="logo">
+                <p class="text-white text-6xl  text-center">Lorem</p>
             </div>    
         </div>
-        <div class="w-3/5 bg-slate-100 flex items-center px-20">
-            <div class="h-4/5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt aperiam minima laudantium 
+        <div class="w-3/5 bg-slate-100 flex items-center font-body">
+            <div class="h-4/5 ">
+                <p class="pl-20 pr-56 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt aperiam minima laudantium 
                     repudiandae molestiae tenetur accusantium distinctio reiciendis placeat expedita similique doloribus 
                     commodi laborum a ex, facilis illo quam?
                 </p>
-                <p><i>You know you want to</i></p>
+                <p class="pl-20 pr-56 text-xl font-bold mt-7"><i>You know you want to</i></p>
+
+                <div class="bg-white w-full mt-6 py-7 drop-shadow-md">
+                    <form class="pl-20 pr-56" action="">
+                        <p class="text-2xl">Let's do this!</p>
+                        <div class="flex flex-row flex-nowrap gap-8">
+                            <div class="flex flex-col flex-nowrap">
+                                <label for="name">FIRST NAME</label>
+                                <input type="text" name="name" id="name" required>
+                                <p class="error"></p>
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="emial" id="email" required>
+                                <p class="error"></p>
+                                <label for="pass">PASSWORD</label>
+                                <input type="password" name="pass" id="pass" required>
+                                <p class="error"></p>
+                            </div>
+                            <div class="flex flex-col flex-nowrap">
+                                <label for="sur">SURNAME</label>
+                                <input type="text" name="sur" id="sur" required>
+                                <p class="error"></p>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="phone" required>
+                                <p class="error"></p>
+                                <label for="confirm">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm" id="confirm" required>
+                                <p class="error"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
