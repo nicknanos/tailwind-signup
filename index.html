@@ -8,14 +8,14 @@
     <title>Sign Up Form</title>
 </head>
 <body class="h-screen">
-    <div class="flex w-full h-full">
-        <div class="w-2/5 bg-hero-image bg-no-repeat bg-cover h-full">
-            <div class="bg-black/60 flex justify-center items-center mt-28 ml-5 px-5 py-3 rounded-full">
+    <div class="flex md:flex-row flex-col w-full h-full">
+        <div class="w-full md:w-2/5 bg-myBlue md:bg-hero-image bg-no-repeat bg-contain h-full">
+            <div class="bg-black/60 flex justify-center items-center mt-20 ml-5 px-5 py-3 rounded-full">
                 <img class="w-24" src="./img/logo.png" alt="logo">
                 <p class="text-white text-6xl  text-center font-bold font-logo">VeloSign</p>
             </div>    
         </div>
-        <div class="w-3/5 bg-gradient-to-r from-myBlue to-myYellow flex items-center font-body text-white">
+        <div class="w-full md:w-3/5 bg-gradient-to-b md:bg-gradient-to-r from-myBlue to-myYellow flex items-center font-body text-white pb-32 md:pb-0">
             <div class="h-4/5 pl-20 pr-56">
                 <p class=" text-xl">Welcome to VeloSign! Join our vibrant community and unlock a world of 
                     exciting opportunities. Whether you're a cycling enthusiast, a fitness enthusiast, or simply looking 
@@ -23,10 +23,10 @@
                 </p>
                 <p class=" text-xl font-bold mt-7"><i>You know you want to</i></p>
 
-                <div class="bg-white w-full mt-6 py-7 drop-shadow-md -ml-15 pl-20 text-black rounded-xl">
+                <div class="bg-white w-full mt-6 py-7 px-6 drop-shadow-md md:ml-15 md:pl-20 text-black rounded-xl">
                     <form class="" action="">
                         <h3 class="text-2xl mb-7">Let's do this!</h3>
-                        <div class="inputs flex flex-row flex-nowrap gap-28">
+                        <div class="inputs flex flex-col md:flex-row flex-nowrap gap-9 md:gap-28">
                             <div class="flex flex-col flex-nowrap">
                                 <label for="name">FIRST NAME</label>
                                 <input type="text" name="name" id="name" required>
@@ -52,8 +52,8 @@
                         </div>
                     </form>
                 </div>
-                <button class="bg-green-800 text-xl px-7 py-3 text-white rounded-lg shadow-lg mt-7 hover:bg-green-600 active:bg-green-800">Create Account</button>
-                <p class="mt-5">Already have an account? <a class="font-bold text-green-950 hover:underline" href="#">Log in</a></p>
+                <button class="bg-red-700 text-xl px-7 py-3 text-white rounded-lg shadow-lg mt-7 hover:brightness-75 active:bg-green-800">Create Account</button>
+                <p class="text-xs md:text-lg mt-5">Already have an account? <a class="font-bold text-red-900 hover:underline" href="#">Log in</a></p>
             </div>
         </div>
     </div>
