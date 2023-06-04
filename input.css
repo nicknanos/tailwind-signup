@@ -1,32 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap");
 
 input {
-    outline: 1px solid lightgray;
-    border-radius: 4px;
-    padding: 4px 7px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  outline: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 4px 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 input.parsed:invalid {
-    outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 label {
-    margin-top: 1px;
-    color: gray;
-    font-family: 'Courier New', Courier, monospace;
+  margin-top: 1px;
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.inputs p,.error {
-    padding-top: 2px;
-    position:relative;
-    color: red;
-    font-size: 0.7rem;
+.inputs p,
+.error {
+  padding-top: 2px;
+  position: relative;
+  color: red;
+  font-size: 0.7rem;
 }
 
 input:invalid + .error::before {
-    content: "*This is an error";
+  content: "*This is an error";
 }
