@@ -8,6 +8,7 @@ input {
   border-radius: 4px;
   padding: 4px 7px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  @apply dark:bg-slate-900;
 }
 
 input.parsed:invalid {
@@ -30,4 +31,9 @@ label {
 
 input:invalid + .error::before {
   content: "*This is an error";
+}
+
+.circle{
+  aspect-ratio: 1;
+  border-radius:50%
 }

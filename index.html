@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./dist/output.css" />
+    <script src="index.js" defer></script>
     <title>Sign Up Form</title>
   </head>
   <body class="h-screen">
@@ -38,10 +39,20 @@
           <p class="mt-7 text-xl font-bold"><i>You know you want to</i></p>
 
           <div
-            class="md:ml-15 mt-6 w-full rounded-xl bg-white px-6 py-7 text-black drop-shadow-md md:pl-20"
+            class="md:ml-15 mt-6 w-full rounded-xl duration-200 dark:bg-slate-900 dark:text-white bg-white px-6 py-7 text-black drop-shadow-md md:pl-20"
           >
             <form class="" action="">
-              <h3 class="mb-7 text-2xl">Let's do this!</h3>
+                <div class="flex justify-between">
+                    <h3 class="mb-7 text-2xl">Let's do this!</h3>
+                    <button class="toggle-dark mb-10 dark:text-white">
+                        <div class="flex justify-center items-center">
+                            <div class="circle w-7 bg-black dark:bg-white">
+                                <div class="circle w-6 ml-3 bg-white dark:bg-slate-900"></div>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
               <div
                 class="inputs flex flex-col flex-nowrap gap-9 md:flex-row md:gap-28"
               >
